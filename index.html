@@ -1,0 +1,123 @@
+<style>
+    .img {
+        margin:auto;
+    }
+    [type='submit'] {
+        border: none;
+    }
+    body {
+        font-family: Arial, sans-serif;
+    }
+    #top-menu {
+        height: 50px;
+        display: flex;
+        justify-content: right;
+    }
+    #logo-search {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 100px;
+    }
+    #logo {
+        margin-bottom:20px;
+    }
+    #search-buttons {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    #languages {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    #bottom {
+        display: grid;
+        grid-template-rows: 50px 50px;
+        position: absolute;
+        bottom: 0;
+        width: auto;
+    }
+    #country {
+        height: 50px;
+        display: flex;
+        justify-content: left;
+        background: #f2f2f2;
+        border-bottom: 1px solid #dadce0;
+        border-bottom-color: rgb(218, 220, 224);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        color: rgba(0,0,0,.54);
+        padding-top: 2px;
+        padding-bottom: 2px;
+        width: auto;
+    }
+    #bottom-row {
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        background: #f2f2f2;
+        width: auto;
+    }
+    #bottom-left {
+        justify-content: center;
+    }
+    #bottom-right {
+        justify-content: space-between;
+    }
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<html>
+    <body>
+        <div id="top-menu">
+            <p><a href="https://mail.google.com/mail/&ogbl">Gmail</a>
+            <a href="https://www.google.ae/imghp?hl=en&ogbl">Images</a></p>
+        </div>
+        <div id="logo-search">
+            <div id="logo">
+                <img id="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+            </div>
+            <input id="center" style="width: 500px;" type="text">
+        </div>
+        <div id="search-buttons">
+            <button id="center" style="margin-right: 5px;" type="submit">Google Search</button>
+            <button id="center" style="margin-left: 5px;" type="submit">I'm Feeling Lucky</button>
+        </div>
+        <div id="languages">
+            <p>Google offered in: 
+                <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=fa&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCA4"> فارسی </a>
+                <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=ar&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCA0"> العربية </a>
+                <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCA8"> हिन्दी </a>
+                <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=ur&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCBA"> اردو </a></p>
+        </div>
+        <div id="bottom">
+            <div id="country">
+                United Arab Emirates
+            </div>
+            <div id="bottom-row">
+                <div id="bottom-left">
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjgq9eNnsrwAhXrhf0HHda0AggQkNQCCBE&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-AE%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw2o6PHKFybiwEEL9L90RAe4">About</a>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjgq9eNnsrwAhXrhf0HHda0AggQkdQCCBI&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_ae%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw1rwvVwCluoGmv2W6njFKrO">Advertising</a>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjgq9eNnsrwAhXrhf0HHda0AggQktQCCBM&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a>
+                    <a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
+                </div>
+                <div id="bottom-right">
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjgq9eNnsrwAhXrhf0HHda0AggQ8awCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-AE%26fg%3D1&usg=AOvVaw2UORDPWT6wDEzAYlNAwexj">Privacy</a>
+                    <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjgq9eNnsrwAhXrhf0HHda0AggQ8qwCCBU&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-AE%26fg%3D1&usg=AOvVaw20OzFUHhZERN0vDJO-rSC3">Terms</a>
+                    Settings
+                </div>
+                
+            </div>
+        </div>
+        
+    </body>
+</html>
