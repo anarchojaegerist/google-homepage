@@ -1,48 +1,133 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <style>
     .img {
         margin:auto;
     }
+    a {
+        text-decoration: none;
+        color:currentColor;
+        word-spacing: 0.25em;
+    }
+    a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
     [type='submit'] {
         border: none;
+        padding: 0px 15px;
+        font-size: 15px;
     }
+    [type='submit']:hover {
+        box-shadow: 0 0 4px rgba(0,0,0,0.19);
+        background-color: #f2f2f2;
+    }
+
+    input[type="text"] {
+        width: 500px;
+        height: 30px;
+        border-style: none;
+        margin: 5px 0px 0px 10px;
+    }
+
+    input[type="text"]:focus {
+        outline: none;
+    }
+    
+    
     body {
         font-family: Arial, sans-serif;
     }
-    #top-menu {
+    .top-menu {
         height: 50px;
+        width: 200px;
+        position: fixed;
+        right: 10;
         display: flex;
-        justify-content: right;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 13px;
     }
-    #logo-search {
+
+    a[class="top-icons"] {
+        border-radius: 50%;
+        border-width: 5px;
+        border-color: #f2f2f2;
+        border-style: none;
+    }
+    a[class="top-icons"]:hover {
+        text-decoration: none;
+        border-radius: 50%;
+        border-width: 5px;
+        border-color: #f2f2f2;
+        border-style: solid;
+    }
+    .center-box {
+        height:auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-search {
         height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         top: 100px;
+        padding-top: 123px;
+        margin-bottom: -40px;
     }
-    #logo {
-        margin-bottom:20px;
+    .logo {
+        margin-bottom: 20px;
     }
-    #search-buttons {
+    .search-bar {
+        width: 600px;
+        height: 40px;
+        border-width: 1px;
+        border-radius: 24px;
+        border-style:solid;
+        border-color: #dfe1e5;
+        display: flex;
+    }
+    .search-bar:hover {
+        box-shadow: 0 0 4px rgba(0,0,0,0.19);
+    }
+    
+    .search-buttons {
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    button {
+        cursor: pointer;
+    }
+    .languages{
         height: 50px;
         display: flex;
         justify-content: center;
+        font-size: 13px;
     }
-    #languages {
-        height: 50px;
+
+    p a{
+        color:blue;
+        margin-right: 10px;
+    }
+    .bottom {
         display: flex;
-        justify-content: center;
-    }
-    #bottom {
-        display: grid;
-        grid-template-rows: 50px 50px;
-        position: absolute;
+        flex-direction: column;
+        position: fixed;
         bottom: 0;
-        width: auto;
+        right: 0;
+        left: 0;
+        width: 100vw;
+        font-size: 15px;
+        vertical-align: middle;
+        color: rgba(0, 0, 0,.54);
     }
-    #country {
-        height: 50px;
+    .country {
+        height: 10x;
         display: flex;
         justify-content: left;
         background: #f2f2f2;
@@ -51,73 +136,84 @@
         border-bottom-style: solid;
         border-bottom-width: 1px;
         color: rgba(0,0,0,.54);
-        padding-top: 2px;
-        padding-bottom: 2px;
-        width: auto;
+        padding: 15px 30px;
     }
-    #bottom-row {
-        height: 50px;
+    .bottom-row {
+        height: 10x;
         display: flex;
-        justify-content: space-around;
-        background: #f2f2f2;
-        width: auto;
-    }
-    #bottom-left {
-        justify-content: center;
-    }
-    #bottom-right {
         justify-content: space-between;
+        background: #f2f2f2;
+        padding: 15px 30px;
+        word-spacing: 20px;
+        font-size: 14px;
     }
-    a {
-        text-decoration: none;
+    .bottom-left {
+        justify-content: space-between;
+        margin-left: 5px;
     }
-    a:hover {
-        text-decoration: underline;
+    .bottom-right {
+        justify-content: space-between;
+        margin-left: 5px;
+    }
+    
+    .material-icons-outlined {
+        font-family: 'Material Icons';
+        font-size: 25px;
+        color: #5f6368;
+    }
+    a > .material-icons-outlined:focus {
+        box-shadow: rgba(0, 0, 0,.54);
     }
 </style>
 
 <html>
     <body>
-        <div id="top-menu">
-            <p><a href="https://mail.google.com/mail/&ogbl">Gmail</a>
-            <a href="https://www.google.ae/imghp?hl=en&ogbl">Images</a></p>
+        <div class="top-menu">
+            <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
+            <a href="https://www.google.ae/imghp?hl=en&ogbl">Images</a>
+            <a href="#" class="top-icons"><span class="material-icons-outlined">apps</span></a>
+            <a href="#"><span class="material-icons-outlined" style="font-size: 35px;">account_circle</span></a>
         </div>
-        <div id="logo-search">
-            <div id="logo">
-                <img id="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        <div class="center-box">
+            <div class="logo-search">
+                <div class="logo">
+                    <img class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+                </div>
+                <div class="search-bar">
+                    <span class="material-icons-outlined" style="font-size: 20px; margin-left: 10px; margin-top: 8px;">search</span>
+                    <input class="center" type="text">
+                </div>
             </div>
-            <input id="center" style="width: 500px;" type="text">
+            <div class="search-buttons">
+                <button class="center" style="margin-right: 5px;" type="submit">Google Search</button>
+                <button class="center" style="margin-left: 5px;" type="submit">I'm Feeling Lucky</button>
+            </div>
+            
+            <div class="languages">
+                <p>Google offered in:  
+                    <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=fa&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCA4">فارسی</a>
+                    <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=ar&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCA0">العربي</a>
+                    <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCA8">हिन्दी</a>
+                    <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=ur&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCBA">اردو</a></p>
+            </div>
         </div>
-        <div id="search-buttons">
-            <button id="center" style="margin-right: 5px;" type="submit">Google Search</button>
-            <button id="center" style="margin-left: 5px;" type="submit">I'm Feeling Lucky</button>
-        </div>
-        <div id="languages">
-            <p>Google offered in: 
-                <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=fa&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCA4"> فارسی </a>
-                <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=ar&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCA0"> العربية </a>
-                <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=hi&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCA8"> हिन्दी </a>
-                <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=ur&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCBA"> اردو </a></p>
-        </div>
-        <div id="bottom">
-            <div id="country">
+        <div class="bottom">
+            <div class="country">
                 United Arab Emirates
             </div>
-            <div id="bottom-row">
-                <div id="bottom-left">
+            <div class="bottom-row">
+                <div class="bottom-left">
                     <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjgq9eNnsrwAhXrhf0HHda0AggQkNQCCBE&url=https%3A%2F%2Fabout.google%2F%3Futm_source%3Dgoogle-AE%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&usg=AOvVaw2o6PHKFybiwEEL9L90RAe4">About</a>
                     <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjgq9eNnsrwAhXrhf0HHda0AggQkdQCCBI&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_ae%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw1rwvVwCluoGmv2W6njFKrO">Advertising</a>
                     <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjgq9eNnsrwAhXrhf0HHda0AggQktQCCBM&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a>
                     <a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a>
                 </div>
-                <div id="bottom-right">
+                <div class="bottom-right">
                     <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjgq9eNnsrwAhXrhf0HHda0AggQ8awCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-AE%26fg%3D1&usg=AOvVaw2UORDPWT6wDEzAYlNAwexj">Privacy</a>
                     <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwjgq9eNnsrwAhXrhf0HHda0AggQ8qwCCBU&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-AE%26fg%3D1&usg=AOvVaw20OzFUHhZERN0vDJO-rSC3">Terms</a>
                     Settings
                 </div>
-                
             </div>
         </div>
-        
     </body>
 </html>
