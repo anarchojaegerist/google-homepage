@@ -1,177 +1,9 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-
-<style>
-    a {
-        text-decoration: none;
-        color:currentColor;
-        word-spacing: 0.25em;
-    }
-    a:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
-    [type='submit'] {
-        border: none;
-        padding: 0px 15px;
-        font-size: 15px;
-    }
-    [type='submit']:hover {
-        box-shadow: 0 0 4px rgba(0,0,0,0.19);
-        background-color: #f2f2f2;
-    }
-    input[type="text"] {
-        width: 500px;
-        height: 30px;
-        border-style: none;
-        margin: 5px 0px 0px 10px;
-    }
-    input[type="text"]:focus {
-        outline: none;
-    }
-    body {
-        font-family: Arial, sans-serif;
-    }
-    .top-menu {
-        height: 50px;
-        width: 200px;
-        position: fixed;
-        right: 10;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        font-size: 13px;
-    }
-    #app-icon {
-        border-radius: 50%;
-        border-width: 9px;
-        border-color: transparent;
-        border-style: solid;
-        height: 25px;
-        width: 25px;
-    }
-    #app-icon:hover {
-        text-decoration: none;
-        border-radius: 50%;
-        border-width: 9px;
-        border-color: #f2f2f2;
-        border-style: solid;
-        background-color: #f2f2f2; 
-    }
-    #account-icon {
-        border-radius: 50%;
-        border-width: 2px;
-        border-color: transparent;
-        border-style: solid;
-        height: 35px;
-        width: 35px;
-    }
-    #account-icon:hover {
-        text-decoration: none;
-        border-radius: 50%;
-        border-width: 2px;
-        border-color: #f2f2f2;
-        border-style: solid;
-        background-color: #f2f2f2; 
-    }
-    .center-box {
-        height:auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .logo-search {
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 180px;
-        margin-bottom: -35px;
-    }
-    .logo {
-        margin-bottom: 20px;
-    }
-    .search-bar {
-        width: 580px;
-        height: 40px;
-        border-width: 1px;
-        border-radius: 24px;
-        border-style:solid;
-        border-color: #dfe1e5;
-        display: flex;
-    }
-    .search-bar:hover {
-        box-shadow: 0 0 4px rgba(0,0,0,0.19);
-    }
-    
-    .search-buttons {
-        height: 35px;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-    }
-    button {
-        cursor: pointer;
-    }
-    .languages{
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        font-size: 13px;
-    }
-    p a{
-        color:blue;
-        margin-right: 10px;
-    }
-    .bottom {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 100vw;
-        font-size: 15px;
-        vertical-align: middle;
-        color: rgba(0, 0, 0,.54);
-    }
-    .country {
-        height: 10x;
-        display: flex;
-        justify-content: left;
-        background: #f2f2f2;
-        border-bottom: 1px solid #dadce0;
-        border-bottom-color: rgb(218, 220, 224);
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-        color: rgba(0,0,0,.54);
-        padding: 15px 30px;
-    }
-    .bottom-row {
-        height: 10x;
-        display: flex;
-        justify-content: space-between;
-        background: #f2f2f2;
-        padding: 15px 30px;
-        word-spacing: 20px;
-        font-size: 14px;
-    }
-    .bottom-left {
-        justify-content: space-between;
-        margin-left: 5px;
-    }
-    .bottom-right {
-        justify-content: space-between;
-        margin-left: 5px;
-    }
-    .material-icons-outlined {
-        font-family: 'Material Icons';
-        font-size: 25px;
-        color: #5f6368;
-    }
-</style>
-
+<!DOCTYPE html>
 <html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="index_style.css">
+    </head>
     <body>
         <div class="top-menu">
             <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
@@ -179,7 +11,7 @@
             <a href="https://www.google.ae/intl/en/about/products" class="top-icons" id="app-icon"><span class="material-icons-outlined">apps</span></a>
             <a href="#" class="top-icons" id="account-icon"><span class="material-icons-outlined" style="font-size: 35px;">account_circle</span></a>
         </div>
-        <div class="center-box">
+        <div class="center-container">
             <div class="logo-search">
                 <div class="logo">
                     <img class="center" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
@@ -202,7 +34,7 @@
                     <a href="https://www.google.com/setprefs?sig=0_rDTOR8KZctgxGMDDwgSMlwLWfh8%3D&hl=ur&source=homepage&sa=X&ved=0ahUKEwixjOSNhcrwAhXV8rsIHbYoBsIQ2ZgBCBA">اردو</a></p>
             </div>
         </div>
-        <div class="bottom">
+        <div class="footer">
             <div class="country">
                 United Arab Emirates
             </div>
