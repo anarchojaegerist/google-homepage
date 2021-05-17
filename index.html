@@ -2,9 +2,6 @@
       rel="stylesheet">
 
 <style>
-    .img {
-        margin:auto;
-    }
     a {
         text-decoration: none;
         color:currentColor;
@@ -23,19 +20,15 @@
         box-shadow: 0 0 4px rgba(0,0,0,0.19);
         background-color: #f2f2f2;
     }
-
     input[type="text"] {
         width: 500px;
         height: 30px;
         border-style: none;
         margin: 5px 0px 0px 10px;
     }
-
     input[type="text"]:focus {
         outline: none;
     }
-    
-    
     body {
         font-family: Arial, sans-serif;
     }
@@ -49,19 +42,37 @@
         justify-content: space-around;
         font-size: 13px;
     }
-
-    a[class="top-icons"] {
+    #app-icon {
         border-radius: 50%;
-        border-width: 5px;
-        border-color: #f2f2f2;
-        border-style: none;
+        border-width: 9px;
+        border-color: transparent;
+        border-style: solid;
+        height: 25px;
+        width: 25px;
     }
-    a[class="top-icons"]:hover {
+    #app-icon:hover {
         text-decoration: none;
         border-radius: 50%;
-        border-width: 5px;
+        border-width: 9px;
         border-color: #f2f2f2;
         border-style: solid;
+        background-color: #f2f2f2; 
+    }
+    #account-icon {
+        border-radius: 50%;
+        border-width: 2px;
+        border-color: transparent;
+        border-style: solid;
+        height: 35px;
+        width: 35px;
+    }
+    #account-icon:hover {
+        text-decoration: none;
+        border-radius: 50%;
+        border-width: 2px;
+        border-color: #f2f2f2;
+        border-style: solid;
+        background-color: #f2f2f2; 
     }
     .center-box {
         height:auto;
@@ -74,15 +85,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        top: 100px;
-        padding-top: 123px;
-        margin-bottom: -40px;
+        margin-top: 180px;
+        margin-bottom: -35px;
     }
     .logo {
         margin-bottom: 20px;
     }
     .search-bar {
-        width: 600px;
+        width: 580px;
         height: 40px;
         border-width: 1px;
         border-radius: 24px;
@@ -109,7 +119,6 @@
         justify-content: center;
         font-size: 13px;
     }
-
     p a{
         color:blue;
         margin-right: 10px;
@@ -155,14 +164,10 @@
         justify-content: space-between;
         margin-left: 5px;
     }
-    
     .material-icons-outlined {
         font-family: 'Material Icons';
         font-size: 25px;
         color: #5f6368;
-    }
-    a > .material-icons-outlined:focus {
-        box-shadow: rgba(0, 0, 0,.54);
     }
 </style>
 
@@ -171,8 +176,8 @@
         <div class="top-menu">
             <a href="https://mail.google.com/mail/&ogbl">Gmail</a>
             <a href="https://www.google.ae/imghp?hl=en&ogbl">Images</a>
-            <a href="#" class="top-icons"><span class="material-icons-outlined">apps</span></a>
-            <a href="#"><span class="material-icons-outlined" style="font-size: 35px;">account_circle</span></a>
+            <a href="https://www.google.ae/intl/en/about/products" class="top-icons" id="app-icon"><span class="material-icons-outlined">apps</span></a>
+            <a href="#" class="top-icons" id="account-icon"><span class="material-icons-outlined" style="font-size: 35px;">account_circle</span></a>
         </div>
         <div class="center-box">
             <div class="logo-search">
